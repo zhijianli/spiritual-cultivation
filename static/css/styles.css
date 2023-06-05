@@ -1,0 +1,176 @@
+body {
+    background-color: #F8F4E3;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('lotus.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#inputBox {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFF7D6;
+    color: #8B4513;
+    font-size: 16px;
+}
+#inputPromptBox {
+    width: 320px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFF7D6;
+    color: #8B4513;
+    font-size: 16px;
+}
+
+#inputMaxCharactersBox {
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFF7D6;
+    color: #8B4513;
+    font-size: 16px;
+}
+
+#inputContentBox {
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFF7D6;
+    color: #8B4513;
+    font-size: 16px;
+}
+
+#timeSelectionBox {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFF7D6;
+    color: #8B4513;
+    font-size: 16px;
+}
+
+
+
+#submitBtn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #FFD700;
+    color: #8B4513;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+#submitBtn:hover {
+    background-color: #FFC72C;
+}
+
+#generateCopyBtn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #FFD700;
+    color: #8B4513;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+#generateCopyBtn:hover {
+    background-color: #FFC72C;
+}
+
+#releaseBtn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #FFD700;
+    color: #8B4513;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#releaseBtn:hover {
+    background-color: #FFC72C;
+}
+
+
+
+.dropdown {
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.dropdown:hover {
+    background-color: #F5F5DC;
+}
+
+.radio-group {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+}
+
+.radio-group label {
+    margin: 0 10px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;  /* initially hidden */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for spinner */
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+/* Animation for spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

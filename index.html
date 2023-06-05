@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>釜托寺文案生成</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/styles.css">
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            var select1 = document.getElementById('select1');
+            var select2 = document.getElementById('select2');
+            var options2 = {
+                "文化内容": ["具体项目", "法讯", "釜托公告", "釜托历史"],
+                "活动内容": ["具体项目", "五路财神", "观音送子", "孝恩塔"],
+                "寺院内容": ["具体项目", "釜托禅", "行.禅", "禅.修", "共修"]
+            }
+            var radioButtons = document.getElementsByName('option');
+
+
+            select1.onchange = function() {
+                var selectedOption = select1.options[select1.selectedIndex].value;
+
+                while (select2.options.length) {
+                    select2.remove(0);
+                }
+
+                var options = options2[selectedOption];
+                if (options) {
+                    var len = options.length;
+                    for (var i=0; i<len; i++) {
+                        var option = document.createElement('option');
+                        option.text = options[i];
+                        option.value = options[i];
+                        select2.add(option);
+                    }
+                }
+            };
+
+            select2.onchange = function() {
+                var selectedOption = select2.options[select2.selectedIndex].value;
+                inputPromptBox.value = "写一篇关于釜托寺 " + selectedOption + " 的内容。";
+            };
+            for (var i=0; i<radioButtons.length; i++) {
+                radioButtons[i].onchange = function() {
+                    if (this.checked) {
+                        var selectedOption = select2.options[select2.selectedIndex].value;
+                        var selectedRadio = this.value;
+                        inputPromptBox.value = "写一篇关于釜托寺 " + selectedOption + " 的 " + selectedRadio + " 内容";
+                    }
+                };
+            }
+
+            var generateCopyBtn = document.getElementById('generateCopyBtn');
+            var inputMaxCharactersBox = document.getElementById('inputMaxCharactersBox');
+            var inputContentBox = document.getElementById('inputContentBox');
+            var overlay = document.getElementById('overlay');
+            var radios = document.getElementsByName('option');
+
+
+
+
+            generateCopyBtn.onclick = function() {
+                inputContentBox.value = ''
+
+                var inputValue = inputPromptBox.value;
+                var maxCharacters = inputMaxCharactersBox.value;
+
+<!--                var optionValue;-->
+<!--                for (var i = 0, length = radios.length; i < length; i++) {-->
+<!--                    if (radios[i].checked) {-->
+<!--                        // do whatever you want with the checked radio-->
+<!--                        optionValue = radios[i].value;-->
+
+<!--                        // only one radio can be logically checked, don't check the rest-->
+<!--                        break;-->
+<!--                    }-->
+<!--                }-->
+<!--                console.log(optionValue)-->
+
+
+                // Show the overlay
+                overlay.style.display = 'flex';
+
+                var socket = new WebSocket('ws://127.0.0.1:8000/ws');
+
+                socket.onopen = function(e) {
+                    socket.send(
+                        JSON.stringify({
+                          cmd: "generate",
+                          maxCharacters: maxCharacters,
+                          inputValue: inputValue,
+                        })
+                    );
+                };
+
+                socket.onmessage = function(event) {
+                    console.log('Received message:', event.data);
+                    let dataObject = JSON.parse(event.data);
+                    if (dataObject.state == "continue") {
+                      console.log("continue");
+                      // 这里你可以添加处理接收到的数据的代码
+                      inputContentBox.value = inputContentBox.value + dataObject.data;
+                      // Hide the overlay when the request completes
+                      overlay.style.display = 'none';
+                      socket.send(
+                        JSON.stringify({
+                          cmd: "ack",
+                        })
+                      );
+                    }
+                };
+
+                socket.onerror = function(error) {
+                    console.log(`[error] ${error.message}`);
+                };
+
+
+
+<!--                var socket = io.connect('ws://127.0.0.1:8088/copy_generation/generation_copy');-->
+
+<!--                socket.emit('message', inputValue);-->
+
+<!--                socket.on('message', function(data) {-->
+<!--                    console.log('Received message:', data);-->
+
+<!--                    // 这里你可以添加处理接收到的数据的代码-->
+<!--                    inputContentBox.value = data;-->
+
+<!--                    // Hide the overlay when the request completes-->
+<!--                    overlay.style.display = 'none';-->
+<!--                });-->
+
+
+                // Create a WebSocket connection to your server
+<!--                var socket = new WebSocket('ws://127.0.0.1:8088/copy_generation/generation_copy');-->
+<!--                // Connection opened-->
+<!--                socket.addEventListener('open', function (event) {-->
+<!--                    // Send a message to the server-->
+<!--                    socket.send(JSON.stringify({-->
+<!--                        inputValue: inputValue-->
+<!--                    }));-->
+<!--                });-->
+
+<!--                // Listen for messages from the server-->
+<!--                socket.addEventListener('message', function (event) {-->
+<!--                    console.log(event)-->
+<!--                    var data = JSON.parse(event.data);-->
+<!--                    inputContentBox.value = data;-->
+<!--                    // Hide the overlay when the request completes-->
+<!--                    overlay.style.display = 'none';-->
+<!--                });-->
+
+<!--                // Connection closed-->
+<!--                socket.addEventListener('close', function (event) {-->
+<!--                    // Optionally, handle the connection closing event-->
+<!--                });-->
+
+<!--                // Connection error-->
+<!--                socket.addEventListener('error', function (event) {-->
+<!--                    console.error('Error:', event);-->
+<!--                    // Hide the overlay when the request completes-->
+<!--                    overlay.style.display = 'none';-->
+<!--                });-->
+
+
+<!--                fetch('/copy_generation/generation_copy', {-->
+<!--                    method: 'POST',-->
+<!--                    headers: {-->
+<!--                        'Content-Type': 'application/json',-->
+<!--                    },-->
+<!--                    body: JSON.stringify({-->
+<!--                        // Include any data you need to send here-->
+<!--                        inputValue: inputValue-->
+<!--                    }),-->
+<!--                })-->
+<!--                .then(response => response.json())-->
+<!--                .then(data => {-->
+<!--                    inputTitleBox.value = data.field1; // Assuming 'field1' and 'field2' are the field names-->
+<!--                    inputContentBox.value = data.field2;-->
+<!--                    // Hide the overlay when the request completes-->
+<!--                    overlay.style.display = 'none';-->
+<!--                })-->
+<!--                .catch((error) => {-->
+<!--                    console.error('Error:', error);-->
+<!--                    // Hide the overlay when the request completes-->
+<!--                    overlay.style.display = 'none';-->
+<!--                }); -->
+            };
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row" >
+           <img src="/static/images/ftslogo.jpg" alt="Description of image" width="50" height="50" style="display: inline-block;">
+           <p style="font-size:35px;display: inline-block;">釜托寺文案生成器</p>
+
+        </div>
+        <br>
+        <br>
+        <div class="row" >
+            <select id="select1" class = "dropdown">
+                <option>内容选择</option>
+                <option>文化内容</option>
+                <option>活动内容</option>
+                <option>寺院内容</option>
+            </select>
+            <select id="select2" class = "dropdown">
+
+            </select>
+        </div>
+
+        <div class="radio-group">
+           <label>
+                <input type="radio" name="option" value="微博"> 微博
+            </label>
+            <label>
+                <input type="radio" name="option" value="微信公众号"> 微信公众号
+            </label>
+            <label>
+                <input type="radio" name="option" value="微信朋友圈"> 微信朋友圈
+            </label>
+            <label>
+                <input type="radio" name="option" value="小红书"> 小红书
+            </label>
+        </div>
+        <div class="row">
+            <input type="text" id="inputPromptBox", placeholder="提示词，比如：写一篇关于釜托寺的介绍文章">
+            <input type="text" id= "inputMaxCharactersBox" placeholder="最大字数，比如:100">
+        </div>
+<!--        <div class="row">-->
+
+<!--        </div>-->
+        <div class="row">
+            <button id="generateCopyBtn" >开始生成文案</button>
+        </div>
+        <br>
+         <!-- Overlay for the entire page -->
+        <div id="overlay">
+            <div class="spinner"></div>
+        </div>
+        <div class="row">
+            <textarea id= "inputContentBox" class="input-area" placeholder="文案内容"></textarea>
+        </div>
+
+
+
+        <input id="timeSelectionBox" type="datetime-local">
+
+        <div class="row">
+            <button id="releaseBtn">发布</button>
+        </div>
+    </div>
+</body>
+</html>
