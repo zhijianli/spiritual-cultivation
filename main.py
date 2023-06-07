@@ -17,6 +17,10 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 def read_root():
     return FileResponse('index.html')
 
+@app.get("/temp")
+def temp():
+    return FileResponse('index_temp.html')
+
 openai.api_key = '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'
 
 class ConnectionManager:

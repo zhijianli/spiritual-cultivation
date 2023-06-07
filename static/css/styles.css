@@ -9,7 +9,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('lotus.png');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -50,6 +49,19 @@ body {
 }
 
 #inputContentBox {
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFF7D6;
+    color: #8B4513;
+    font-size: 16px;
+}
+
+
+#editor {
     width: 500px;
     height: 400px;
     padding: 10px;
