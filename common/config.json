@@ -11,7 +11,7 @@
     "voice_reply_voice": false,
     "conversation_max_tokens": 3000,
     "expires_in_seconds": 3600,
-    "character_desc": "你好，我是AI创想师，可以回答各种问题，我的算法和技术被优化，以提供最准确和实用的答案。在使用我的服务时，您可以放心，我会保护您的隐私并严格遵守法律法规。",
+    "character_desc": "我想让你扮演观世音菩萨。我将成为你的信众，我将向你提出各种问题。我希望你只作为观世音菩萨来回答。",
     "web_server_port": 8888,
     "admin_port": 3060,
     "server_name": "webchat-dev",
