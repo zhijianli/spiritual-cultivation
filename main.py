@@ -21,9 +21,43 @@ def read_root():
 def temp():
     return FileResponse('login.html')
 
+@app.get("/column")
+def temp():
+    return FileResponse('column.html')
+
 @app.get("/dialogue")
 def temp():
     return FileResponse('dialogue.html')
+
+@app.get("/buddhist_treasure")
+def temp():
+    return FileResponse('buddhist_treasure.html')
+
+@app.get("/sangha")
+def temp():
+    return FileResponse('sangha.html')
+
+@app.get("/answer_question")
+def temp():
+    return FileResponse('answer_question.html')
+
+
+@app.get("/temple_qa")
+def temp():
+    return FileResponse('temple_qa.html')
+
+@app.get("/scripture-knowledge")
+def temp():
+    return FileResponse('scripture-knowledge.html')
+
+@app.get("/scripture-etiquette")
+def temp():
+    return FileResponse('scripture-etiquette.html')
+
+@app.get("/buddhist-history")
+def temp():
+    return FileResponse('buddhist-history.html')
+
 
 openai.api_key = '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'
 
