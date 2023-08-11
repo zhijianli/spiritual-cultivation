@@ -25,6 +25,13 @@
             width: 200px;
             margin: 20px;
             text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s;
+        }
+
+        .question-box:hover {
+            transform: translateY(-5px);
         }
 
         .question-box h3 {
@@ -36,12 +43,12 @@
 </head>
 
 <body>
-    <div class="question-box">
+    <a href="/chat" class="question-box">
         <h3>怎么礼佛？</h3>
-    </div>
-    <div class="question-box">
+    </a>
+    <a href="/chat" class="question-box">
         <h3>进入寺庙注意事项？</h3>
-    </div>
+    </a>
 </body>
 
 </html>

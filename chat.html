@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>佛教对话</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+        body {
+            font-family: 'Shadows Into Light', cursive;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .chat-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            height: 400px;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .message {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            max-width: 70%;
+            clear: both;
+        }
+
+        .message.user {
+            background-color: #86c67c;
+            color: white;
+            float: right;
+        }
+
+        .message.bot {
+            background-color: #ddd;
+            color: #333;
+            float: left;
+        }
+
+        .input-container {
+            margin-top: 20px;
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+        }
+
+        .input-container input {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .input-container button {
+            width: 20%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #86c67c;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chat-container" id="chat-container">
+        <!-- 对话内容将在此处插入 -->
+    </div>
+    <div class="input-container">
+        <input type="text" id="input-message" placeholder="输入您的问题">
+        <button onclick="sendMessage()">提问</button>
+    </div>
+    <script>
+        function sendMessage() {
+            var input = document.getElementById('input-message');
+            var message = input.value;
+            input.value = '';
+
+            var chatContainer = document.getElementById('chat-container');
+
+            // 添加用户的消息
+            var userDiv = document.createElement('div');
+            userDiv.className = 'message user';
+            userDiv.textContent = message;
+            chatContainer.appendChild(userDiv);
+
+            // 模拟后端回复
+            var botReply = '这是一个模拟回复'; // 实际应用中，您可能需要调用后端接口来获取此响应
+
+            var botDiv = document.createElement('div');
+            botDiv.className = 'message bot';
+            botDiv.textContent = botReply;
+            chatContainer.appendChild(botDiv);
+
+            // 滚动到底部以显示新消息
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+    </script>
+</body>
+
+</html>

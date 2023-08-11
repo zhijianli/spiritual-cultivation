@@ -32,7 +32,10 @@
       var img = document.createElement('img');
       img.src = '/static/images/' + imagePath;
       img.alt = 'Image';
-      div.appendChild(img);
+      var a = document.createElement('a');
+      a.href="/chat"
+      a.appendChild(img);
+      div.appendChild(a);
       mainContent.appendChild(div);
     }
 

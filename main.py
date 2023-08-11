@@ -58,6 +58,9 @@ def temp():
 def temp():
     return FileResponse('buddhist-history.html')
 
+@app.get("/chat")
+def temp():
+    return FileResponse('chat.html')
 
 openai.api_key = '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'
 
