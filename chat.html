@@ -23,7 +23,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 80%;
             max-width: 600px;
-            height: 400px;
+            height: 800px;
             overflow-y: auto;
             position: relative;
         }
@@ -87,6 +87,11 @@
             var input = document.getElementById('input-message');
             var message = input.value;
             input.value = '';
+            // 获取URL中的'characterName'参数
+            console.log('========')
+            var urlParams = new URLSearchParams(window.location.search);
+            var characterName = urlParams.get('characterName');
+            console.log(characterName)
 
             var chatContainer = document.getElementById('chat-container');
 
@@ -96,17 +101,51 @@
             userDiv.textContent = message;
             chatContainer.appendChild(userDiv);
 
-            // 模拟后端回复
-            var botReply = '这是一个模拟回复'; // 实际应用中，您可能需要调用后端接口来获取此响应
-
+            // 后端回复
+            var botReply = '';
             var botDiv = document.createElement('div');
             botDiv.className = 'message bot';
             botDiv.textContent = botReply;
             chatContainer.appendChild(botDiv);
 
+            //建立socket连接
+            var socket = new WebSocket('ws://127.0.0.1:8000/ws');
+
+            socket.onopen = function(e) {
+                socket.send(
+                    JSON.stringify({
+                      cmd: "generate",
+                      maxCharacters: 100,
+                      inputValue: message,
+                    })
+                );
+            };
+
+            socket.onmessage = function(event) {
+                console.log('Received message:', event.data);
+                let dataObject = JSON.parse(event.data);
+                if (dataObject.state == "continue") {
+                  console.log("continue");
+                  // 这里你可以添加处理接收到的数据的代码
+                  botDiv.textContent = botDiv.textContent+dataObject.data
+<!--                  botReply = dataObject.data-->
+<!--                  quill.clipboard.dangerouslyPasteHTML(quill.getText()+dataObject.data);-->
+                  socket.send(
+                    JSON.stringify({
+                      cmd: "ack",
+                    })
+                  );
+                }
+            };
+
+            socket.onerror = function(error) {
+                console.log(`[error] ${error.message}`);
+            };
+
             // 滚动到底部以显示新消息
             chatContainer.scrollTop = chatContainer.scrollHeight;
         }
+
     </script>
 </body>
 

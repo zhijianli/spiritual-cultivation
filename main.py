@@ -96,7 +96,7 @@ async def websocket_endpoint(websocket: WebSocket):
             if data['maxCharacters']:
                 maxCharacters = data['maxCharacters']
             else:
-                maxCharacters = 50
+                maxCharacters = 100
 
             prompt = data['inputValue'] + "，要求中文,字数在"+str(maxCharacters)+"个字"
 
