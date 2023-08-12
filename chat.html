@@ -23,7 +23,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 80%;
             max-width: 600px;
-            height: 800px;
+            height: 600px;
             overflow-y: auto;
             position: relative;
         }
@@ -83,12 +83,13 @@
         <button onclick="sendMessage()">提问</button>
     </div>
     <script>
-        function sendMessage() {
+        // 修改sendMessage函数以接受可选消息参数
+        function sendMessage(messageText) {
             var input = document.getElementById('input-message');
-            var message = input.value;
+            var message = messageText || input.value;
+
             input.value = '';
             // 获取URL中的'characterName'参数
-            console.log('========')
             var urlParams = new URLSearchParams(window.location.search);
             var characterName = urlParams.get('characterName');
             console.log(characterName)
@@ -117,6 +118,7 @@
                       cmd: "generate",
                       maxCharacters: 100,
                       inputValue: message,
+                      characterName:characterName
                     })
                 );
             };
@@ -144,6 +146,15 @@
 
             // 滚动到底部以显示新消息
             chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        // 当窗口加载时调用sendMessage函数，并从URL中获取question参数
+        window.onload = function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var question = urlParams.get('question');
+            if (question) {
+                sendMessage(question);
+            }
         }
 
     </script>

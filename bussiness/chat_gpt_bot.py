@@ -90,7 +90,7 @@ class ChatGPTBot(Bot):
         elif context.get('type', None) == 'IMAGE_CREATE':
             return self.create_img(query, 0)
 
-    def reply_stream(self, query,context=None):
+    def reply_stream(self, query,characterName,context=None):
         # acquire reply content
         if not context or not context.get('type') or context.get('type') == 'TEXT':
             logger.info("[OPEN_AI] query={}".format(query))
@@ -113,7 +113,7 @@ class ChatGPTBot(Bot):
                 Session.clear_session(session_id)
                 self.user_models_[session_id] = context['model']
 
-            session = Session.build_session_query(query, session_id)
+            session = Session.build_session_query(query, session_id,characterName)
             logger.debug("[OPEN_AI] session query={}".format(session))
 
             # if context.get('stream'):
@@ -267,7 +267,7 @@ class ChatGPTBot(Bot):
 
 class Session(object):
     @staticmethod
-    def build_session_query(query, session_id):
+    def build_session_query(query, session_id,characterName):
         '''
         build query with conversation history
         e.g.  [
@@ -282,10 +282,22 @@ class Session(object):
         '''
         session = all_sessions.get(session_id, [])
         if len(session) == 0:
-            system_prompt = conf().get("character_desc", "")
+            system_prompt = ""
+            if characterName == "" or characterName is None:
+                system_prompt = conf().get("character_desc", "")
+            else:
+                system_prompt = "我想让你扮演"+characterName+"。我作为一名游客将向你提出各种问题。我希望你只作为"+characterName+"来回答。"
             system_item = {'role': 'system', 'content': system_prompt}
             session.append(system_item)
             all_sessions[session_id] = session
+        else:
+            first_item = session[0]['content']  # 取出session的第一个数据的content
+            system_prompt = "我想让你扮演" + characterName + "。我作为一名游客将向你提出各种问题。我希望你只作为" + characterName + "来回答。"
+            if characterName == "知客僧" or first_item != system_prompt:
+                system_item = {'role': 'system', 'content': system_prompt}
+                session.clear()
+                session.append(system_item)
+                all_sessions[session_id] = session
         user_item = {'role': 'user', 'content': query}
         session.append(user_item)
         return session

@@ -26,14 +26,14 @@
     }
   </style>
   <script>
-    function createImageElement(mainContent, imagePath) {
+    function createImageElement(mainContent, buddhaName) {
       var div = document.createElement('div');
       div.className = 'image';
       var img = document.createElement('img');
-      img.src = '/static/images/' + imagePath;
+      img.src = '/static/images/' + buddhaName+'.png';
       img.alt = 'Image';
       var a = document.createElement('a');
-      a.href="/chat"
+      a.href = "/chat?characterName=" + encodeURIComponent(buddhaName);
       a.appendChild(img);
       div.appendChild(a);
       mainContent.appendChild(div);
@@ -41,8 +41,8 @@
 
     window.onload = function() {
       var mainContent = document.querySelector('.main-content');
-      createImageElement(mainContent, '六祖慧能.png');
-      createImageElement(mainContent, '玄奘法师.png');
+      createImageElement(mainContent, '六祖慧能');
+      createImageElement(mainContent, '玄奘法师');
     };
   </script>
 </head>

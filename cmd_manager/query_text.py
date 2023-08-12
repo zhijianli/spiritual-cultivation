@@ -74,7 +74,7 @@ class QueryText(ClientCmd):
         #     return None
 
         # request openai
-        response = self.chatgpt_.reply_stream(req_data['prompt'],context)
+        response = self.chatgpt_.reply_stream(req_data['prompt'],req_data['characterName'],context)
         if isinstance(response, dict) and response['completion_tokens'] == 0 :
             res['data'] = response['content']
             res['state'] = 'continue'

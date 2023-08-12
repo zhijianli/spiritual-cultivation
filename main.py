@@ -98,11 +98,14 @@ async def websocket_endpoint(websocket: WebSocket):
             else:
                 maxCharacters = 100
 
-            prompt = data['inputValue'] + "，要求中文,字数在"+str(maxCharacters)+"个字"
+            prompt = data['inputValue']
+
+            characterName = data['characterName']
 
             req_data = {
                 'cmd': 'query_text',
-                'prompt': prompt
+                'prompt': prompt,
+                'characterName':characterName
             }
             # handle message
             response = await cmd_manager.perform(websocket, req_data)
