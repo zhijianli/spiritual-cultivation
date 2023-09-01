@@ -105,7 +105,7 @@ class iciba:
         #     openid = openid.strip()
         #     result = self.send_msg(openid, self.template_id, everyday_words)
         #     self.print_log(result, openid)
-        index_number = 2
+        index_number = 0
         index = index_number
         for openid in openids[index_number:]:
             openid = openid.strip()

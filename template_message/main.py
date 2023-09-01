@@ -17,9 +17,9 @@ if __name__ == '__main__':
     # 用户列表
     openids = [
         # 'ovQOB6YIelUbTBiZEhPYC9N_Iwd8', #(No.4)此处填写你的微信号（微信公众平台上的微信号）
-        'oAl8yxMAhhzJLu7tYnGy1WZXIp7I', #刘师兄的openid
+        # 'oAl8yxMAhhzJLu7tYnGy1WZXIp7I', #刘师兄的openid
         'oAl8yxC88GIzV15S3mM-lcn1a2OU', #我自己的openid
-        'oAl8yxKkfsAIutHtJhblnC27pKkE',#法净的openid
+        # 'oAl8yxKkfsAIutHtJhblnC27pKkE',#法净的openid
         #'xxxxx', #如果有多个用户也可以
         #'xxxxx',
     ]
@@ -31,7 +31,7 @@ if __name__ == '__main__':
     run()方法可以传入openids列表，也可不传参数
     不传参数则对微信公众号的所有用户进行群发
     '''
-    # icb.run(openids)
-    icb.run()
+    icb.run(openids)
+    # icb.run()
 
 
