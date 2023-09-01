@@ -59,7 +59,7 @@ class iciba:
             return openids
 
     # 发送消息
-    def send_msg(self, openid, template_id, iciba_everyday):
+    def send_msg(self, openid, template_id):
         # 定义时间显示格式
         fmt = '%Y-%m-%d %H:%M'
         # 格式化日期
@@ -67,20 +67,20 @@ class iciba:
         msg = {
             'touser': openid,
             'template_id': template_id,
-            'url': 'https://fts123.czkj123.cn/app/index.php?i=5&c=entry&m=fx_activity&do=activity&ac=detail&op=display&activityid=27032&wxref=mp.weixin.qq.com#wechat_redirect',
+            'url': 'https://fo.futuosi.com/app/index.php?i=5&c=entry&m=fx_activity&do=activity&ac=detail&op=display&activityid=172',
             # 'url': 'https://mp.weixin.qq.com/s/gdQ9L-gRyhTBdOAiTACfLg',
             'data': {
                 'thing2': {
-                    'value': "竹海行禅：探索身心和谐的禅修之旅"
+                    'value': "9月｜辟谷轻断食.畅享身心清爽之旅"
                 },
                 'time3':{
-                    'value': "8月25-26日"
+                    'value': "9月11-15日"
                 },
                 'thing4':{
                     'value': "杭州市余杭区百丈镇釜托寺"
                 },
                 'time5':{
-                    'value': "8月24日"
+                    'value': "9月10日"
                 }
             }
         }
@@ -100,15 +100,16 @@ class iciba:
 
     # 为设置的用户列表发送消息
     def send_everyday_words(self, openids):
-        everyday_words = self.get_iciba_everyday()
+        # everyday_words = self.get_iciba_everyday()
         # for openid in openids:
         #     openid = openid.strip()
         #     result = self.send_msg(openid, self.template_id, everyday_words)
         #     self.print_log(result, openid)
-        index = 7821
-        for openid in openids[7821:]:
+        index_number = 0
+        index = index_number
+        for openid in openids[index_number:]:
             openid = openid.strip()
-            result = self.send_msg(openid, self.template_id, everyday_words)
+            result = self.send_msg(openid, self.template_id)
             self.print_log(result, openid)
             time.sleep(10)
             index = index + 1
