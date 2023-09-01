@@ -1,0 +1,195 @@
+[INFO][2023-08-10 13:38:57][chat_gpt_bot.py:96] - [OPEN_AI] query=我希望你扮演释迦牟尼的角色，跟我进行对话，并且回答我的问题．，要求中文,字数在50个字
+[INFO][2023-08-10 13:39:22][chat_gpt_bot.py:96] - [OPEN_AI] query=我希望你扮演数学家的角色，跟我进行对话，并且回答我的问题．，要求中文,字数在50个字
+[INFO][2023-08-10 13:39:33][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？，要求中文,字数在50个字
+[INFO][2023-08-10 13:47:49][chat_gpt_bot.py:96] - [OPEN_AI] query=你扮演一下释迦牟尼，并回答我的问题，要求中文,字数在50个字
+[INFO][2023-08-10 13:55:47][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁，要求中文,字数在50个字
+[INFO][2023-08-10 13:55:59][chat_gpt_bot.py:96] - [OPEN_AI] query=人生的意义是什么，要求中文,字数在50个字
+[INFO][2023-08-10 13:57:10][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？，要求中文,字数在50个字
+[INFO][2023-08-10 13:57:24][chat_gpt_bot.py:96] - [OPEN_AI] query=你做了什么事情？，要求中文,字数在50个字
+[INFO][2023-08-10 14:00:45][chat_gpt_bot.py:96] - [OPEN_AI] query=师父，要求中文,字数在50个字
+[INFO][2023-08-10 14:00:58][chat_gpt_bot.py:96] - [OPEN_AI] query=人生的意义是什么？，要求中文,字数在50个字
+[INFO][2023-08-10 14:01:08][chat_gpt_bot.py:96] - [OPEN_AI] query=我想让你扮演释迦牟尼。我将成为你的弟子，我将向你提出各种问题。我希望你只作为释迦牟尼来回答。我的第一句话是'师傅，你好'，要求中文,字数在50个字
+[INFO][2023-08-10 14:01:14][chat_gpt_bot.py:96] - [OPEN_AI] query=我想让你扮演释迦牟尼。我将成为你的弟子，我将向你提出各种问题。我希望你只作为释迦牟尼来回答。我的第一句话是'师傅，你好'，要求中文,字数在50个字
+[INFO][2023-08-10 15:28:01][chat_gpt_bot.py:96] - [OPEN_AI] query=人生有什么意义，要求中文,字数在50个字
+[INFO][2023-08-10 15:28:15][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？，要求中文,字数在50个字
+[INFO][2023-08-10 15:28:33][chat_gpt_bot.py:96] - [OPEN_AI] query=你能帮我解决什么问题？，要求中文,字数在50个字
+[INFO][2023-08-10 15:28:54][chat_gpt_bot.py:96] - [OPEN_AI] query=你对现在的人们有什么看法？，要求中文,字数在50个字
+[INFO][2023-08-10 15:29:25][chat_gpt_bot.py:96] - [OPEN_AI] query=我现在有很多困惑，要如何解决？，要求中文,字数在50个字
+[INFO][2023-08-10 15:29:48][chat_gpt_bot.py:96] - [OPEN_AI] query=我现在有很多困惑，要如何解决？，要求中文,字数在50个字
+[INFO][2023-08-10 15:30:06][chat_gpt_bot.py:96] - [OPEN_AI] query=如何寻求平静和智慧，要求中文,字数在50个字
+[INFO][2023-08-10 15:33:52][chat_gpt_bot.py:96] - [OPEN_AI] query=如何寻求平静和智慧，要求中文,字数在500个字
+[INFO][2023-08-10 15:34:53][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁，要求中文,字数在50个字
+[INFO][2023-08-10 15:35:28][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁，要求中文,字数在50个字
+[INFO][2023-08-10 15:35:49][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁，要求中文,字数在50个字
+[INFO][2023-08-10 15:36:14][chat_gpt_bot.py:96] - [OPEN_AI] query=如何对你进行供养，要求中文,字数在200个字
+[INFO][2023-08-10 15:36:44][chat_gpt_bot.py:96] - [OPEN_AI] query=我们要如何礼拜你，要求中文,字数在200个字
+[INFO][2023-08-11 10:57:32][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 10:59:42][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 11:00:59][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 11:01:25][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 11:02:03][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 11:02:17][chat_gpt_bot.py:96] - [OPEN_AI] query=人生的意义是什么？，要求中文,字数在100个字
+[INFO][2023-08-11 11:03:34][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 11:05:16][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 13:37:34][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 13:48:51][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:03:29][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:20:20][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:20:39][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁，要求中文,字数在100个字
+[INFO][2023-08-11 14:21:11][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:21:59][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁，要求中文,字数在100个字
+[INFO][2023-08-11 14:22:58][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:24:07][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:36:28][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:42:27][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:42:51][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[ERROR][2023-08-11 14:44:23][chat_gpt_bot.py:223] - 'new_role' is not one of ['system', 'assistant', 'user', 'function'] - 'messages.0.role'
+Traceback (most recent call last):
+  File "/home/mocuili/github/spiritual-cultivation/bussiness/chat_gpt_bot.py", line 190, in _reply_text_stream
+    response = openai.ChatCompletion.create(
+  File "/home/mocuili/.local/lib/python3.8/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "/home/mocuili/.local/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+  File "/home/mocuili/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 231, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "/home/mocuili/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 625, in _interpret_response
+    self._interpret_response_line(
+  File "/home/mocuili/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 688, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.InvalidRequestError: 'new_role' is not one of ['system', 'assistant', 'user', 'function'] - 'messages.0.role'
+[INFO][2023-08-11 14:47:09][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:47:44][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[ERROR][2023-08-11 14:48:36][chat_gpt_bot.py:223] - 'new_role' is not one of ['system', 'assistant', 'user', 'function'] - 'messages.0.role'
+Traceback (most recent call last):
+  File "/home/mocuili/github/spiritual-cultivation/bussiness/chat_gpt_bot.py", line 190, in _reply_text_stream
+    response = openai.ChatCompletion.create(
+  File "/home/mocuili/.local/lib/python3.8/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "/home/mocuili/.local/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+  File "/home/mocuili/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 231, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "/home/mocuili/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 625, in _interpret_response
+    self._interpret_response_line(
+  File "/home/mocuili/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 688, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.InvalidRequestError: 'new_role' is not one of ['system', 'assistant', 'user', 'function'] - 'messages.0.role'
+[INFO][2023-08-11 14:49:13][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:50:17][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:50:36][chat_gpt_bot.py:96] - [OPEN_AI] query=人生的意义是什么？，要求中文,字数在100个字
+[INFO][2023-08-11 14:51:20][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁，要求中文,字数在100个字
+[INFO][2023-08-11 14:51:50][chat_gpt_bot.py:96] - [OPEN_AI] query=能跟我讲讲你的故事吗？，要求中文,字数在100个字
+[INFO][2023-08-11 14:52:04][chat_gpt_bot.py:96] - [OPEN_AI] query=人生有什么意义？，要求中文,字数在100个字
+[INFO][2023-08-11 14:52:23][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:52:34][chat_gpt_bot.py:96] - [OPEN_AI] query=你有什么故事？，要求中文,字数在100个字
+[INFO][2023-08-11 14:53:15][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:53:20][chat_gpt_bot.py:96] - [OPEN_AI] query=人生有什么意义？，要求中文,字数在100个字
+[INFO][2023-08-11 14:53:36][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:53:42][chat_gpt_bot.py:96] - [OPEN_AI] query=你有什么故事？，要求中文,字数在100个字
+[INFO][2023-08-11 14:54:04][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:54:22][chat_gpt_bot.py:96] - [OPEN_AI] query=人生的意义是什么？，要求中文,字数在100个字
+[INFO][2023-08-11 14:54:32][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 14:54:40][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁，要求中文,字数在100个字
+[INFO][2023-08-11 14:56:21][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁，要求中文,字数在100个字
+[INFO][2023-08-11 14:57:29][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁，要求中文,字数在100个字
+[INFO][2023-08-11 14:57:53][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 18:23:20][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[WARNING][2023-08-11 18:23:20][chat_gpt_bot.py:214] - Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+[WARNING][2023-08-11 18:23:20][chat_gpt_bot.py:215] - [OPEN_AI] APIConnection failed
+[INFO][2023-08-11 18:23:42][chat_gpt_bot.py:96] - [OPEN_AI] query=，要求中文,字数在100个字
+[INFO][2023-08-11 18:23:46][chat_gpt_bot.py:96] - [OPEN_AI] query=，要求中文,字数在100个字
+[INFO][2023-08-11 18:24:36][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 18:24:50][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁，要求中文,字数在100个字
+[INFO][2023-08-11 18:25:03][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 18:25:25][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-11 18:25:47][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-12 07:52:21][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-12 13:15:06][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-12 13:15:54][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-12 13:16:55][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-12 13:21:24][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-12 13:21:46][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-12 13:21:57][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-12 13:24:01][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-12 13:35:16][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-12 13:38:25][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要上早课？，要求中文,字数在100个字
+[INFO][2023-08-12 13:38:44][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁，要求中文,字数在100个字
+[INFO][2023-08-12 13:39:30][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-12 13:39:36][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要做法事？，要求中文,字数在100个字
+[INFO][2023-08-12 13:42:00][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要做法事？
+[INFO][2023-08-12 13:42:05][chat_gpt_bot.py:96] - [OPEN_AI] query=什么是大乘佛法？
+[INFO][2023-08-12 14:00:44][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要做法事？
+[INFO][2023-08-12 14:00:51][chat_gpt_bot.py:96] - [OPEN_AI] query=怎么礼佛？
+[INFO][2023-08-12 14:01:01][chat_gpt_bot.py:96] - [OPEN_AI] query=药师经讲什么？
+[INFO][2023-08-12 14:01:18][chat_gpt_bot.py:96] - [OPEN_AI] query=进入寺庙注意事项？
+[INFO][2023-08-12 14:04:03][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要上早课？
+[INFO][2023-08-12 14:04:15][chat_gpt_bot.py:96] - [OPEN_AI] query=金刚经讲什么？
+[INFO][2023-08-12 14:04:37][chat_gpt_bot.py:96] - [OPEN_AI] query=怎么礼佛？
+[INFO][2023-08-12 14:05:02][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要做法事？
+[INFO][2023-08-12 14:05:14][chat_gpt_bot.py:96] - [OPEN_AI] query=怎么礼佛？
+[INFO][2023-08-12 14:05:57][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要做法事？
+[INFO][2023-08-12 14:06:08][chat_gpt_bot.py:96] - [OPEN_AI] query=金刚经讲什么？
+[INFO][2023-08-12 14:06:41][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-08-12 14:06:53][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁
+[INFO][2023-08-12 14:09:57][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-08-12 14:10:04][chat_gpt_bot.py:96] - [OPEN_AI] query=人生的意义是什么？
+[INFO][2023-08-12 14:10:13][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁
+[INFO][2023-08-12 14:56:25][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-08-12 14:56:43][chat_gpt_bot.py:96] - [OPEN_AI] query=我刚刚失恋了，你有什么建议？
+[INFO][2023-08-12 14:57:32][chat_gpt_bot.py:96] - [OPEN_AI] query=
+[INFO][2023-08-12 14:57:43][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-08-12 14:59:05][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁
+[INFO][2023-08-12 15:00:34][chat_gpt_bot.py:96] - [OPEN_AI] query=金刚经讲什么？
+[INFO][2023-08-13 09:32:56][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-08-13 09:33:05][chat_gpt_bot.py:96] - [OPEN_AI] query=人生的意义是什么？
+[INFO][2023-08-13 09:33:15][chat_gpt_bot.py:96] - [OPEN_AI] query=你有什么故事？
+[INFO][2023-08-13 09:33:34][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-08-13 09:33:47][chat_gpt_bot.py:96] - [OPEN_AI] query=什么是禅
+[INFO][2023-08-13 09:34:02][chat_gpt_bot.py:96] - [OPEN_AI] query=你为什么要出家
+[INFO][2023-08-13 09:34:17][chat_gpt_bot.py:96] - [OPEN_AI] query=你为什么要出家
+[INFO][2023-08-13 09:34:57][chat_gpt_bot.py:96] - [OPEN_AI] query=天台宗创始人是谁
+[INFO][2023-08-13 09:35:39][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁
+[INFO][2023-08-13 09:35:47][chat_gpt_bot.py:96] - [OPEN_AI] query=你有什么故事？
+[INFO][2023-08-13 09:36:00][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要做法事？
+[INFO][2023-08-13 09:36:51][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要有祈福？
+[INFO][2023-08-13 09:37:20][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要祈福
+[INFO][2023-08-13 09:37:46][chat_gpt_bot.py:96] - [OPEN_AI] query=在详细一些
+[INFO][2023-08-13 09:38:07][chat_gpt_bot.py:96] - [OPEN_AI] query=什么是大乘佛法？
+[INFO][2023-08-13 09:38:23][chat_gpt_bot.py:96] - [OPEN_AI] query=什么是大乘佛法？
+[INFO][2023-08-13 09:39:26][chat_gpt_bot.py:96] - [OPEN_AI] query=这个回答可以在幽默一些
+[INFO][2023-08-13 09:39:41][chat_gpt_bot.py:96] - [OPEN_AI] query=什么是大乘佛法？
+[INFO][2023-08-13 09:40:02][chat_gpt_bot.py:96] - [OPEN_AI] query=什么是大乘佛法？回答可以幽默一点
+[INFO][2023-08-13 16:01:34][chat_gpt_bot.py:96] - [OPEN_AI] query=写一篇关于釜托寺 法讯 的 微博 内容，要求中文,字数在100个字
+[INFO][2023-08-13 16:02:13][chat_gpt_bot.py:96] - [OPEN_AI] query=写一篇关于釜托寺 观音送子 的 微博 内容，要求中文,字数在100个字
+[INFO][2023-08-13 16:08:54][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁，要求中文,字数在100个字
+[INFO][2023-08-13 16:09:03][chat_gpt_bot.py:96] - [OPEN_AI] query=人生的意义是什么？，要求中文,字数在100个字
+[INFO][2023-08-13 16:09:10][chat_gpt_bot.py:96] - [OPEN_AI] query=你有什么故事？，要求中文,字数在100个字
+[INFO][2023-08-13 16:09:21][chat_gpt_bot.py:96] - [OPEN_AI] query=什么是大乘佛法？回答可以幽默一点，要求中文,字数在100个字
+[INFO][2023-08-13 16:09:42][chat_gpt_bot.py:96] - [OPEN_AI] query=什么是小乘佛法，要求中文,字数在100个字
+[INFO][2023-08-13 16:11:06][chat_gpt_bot.py:96] - [OPEN_AI] query=再具体说说看，要求中文,字数在100个字
+[INFO][2023-08-13 16:11:22][chat_gpt_bot.py:96] - [OPEN_AI] query=再具体说说看，要求中文,字数在100个字
+[INFO][2023-08-13 16:14:10][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-08-13 16:14:21][chat_gpt_bot.py:96] - [OPEN_AI] query=什么是大乘佛法？
+[INFO][2023-08-13 16:14:28][chat_gpt_bot.py:96] - [OPEN_AI] query=能具体说说看吗？
+[INFO][2023-08-13 16:14:44][chat_gpt_bot.py:96] - [OPEN_AI] query=有什么修行路径吗？
+[INFO][2023-08-13 16:18:56][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要做法事？
+[INFO][2023-08-13 16:19:06][chat_gpt_bot.py:96] - [OPEN_AI] query=具体流程是怎么样的？
+[INFO][2023-08-13 16:19:28][chat_gpt_bot.py:96] - [OPEN_AI] query=具体流程是怎么样的？
+[INFO][2023-08-13 16:19:40][chat_gpt_bot.py:96] - [OPEN_AI] query=具体流程是怎么样的？
+[INFO][2023-08-13 16:21:07][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要做法事？
+[INFO][2023-08-13 16:21:16][chat_gpt_bot.py:96] - [OPEN_AI] query=具体流程是怎么样的？
+[INFO][2023-08-13 16:21:29][chat_gpt_bot.py:96] - [OPEN_AI] query=有什么注意事项？
+[INFO][2023-08-13 16:21:47][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-13 16:22:58][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要做法事？
+[INFO][2023-08-13 16:23:05][chat_gpt_bot.py:96] - [OPEN_AI] query=具体流程
+[INFO][2023-08-13 16:23:22][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，要求中文,字数在100个字
+[INFO][2023-08-13 16:25:46][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁
+[INFO][2023-08-13 16:25:53][chat_gpt_bot.py:96] - [OPEN_AI] query=人生有什么意义？
+[INFO][2023-08-13 16:25:59][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要做法事？
+[INFO][2023-08-13 16:26:06][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁
+[INFO][2023-08-13 16:26:38][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁
+[INFO][2023-08-14 08:27:21][chat_gpt_bot.py:96] - [OPEN_AI] query=写一篇关于釜托寺 五路财神 的 微博 内容
+[INFO][2023-08-14 08:28:43][chat_gpt_bot.py:96] - [OPEN_AI] query=写一篇关于釜托寺 法讯 的 微博 内容，要求中文,字数在100个字
+[INFO][2023-08-14 08:28:59][chat_gpt_bot.py:96] - [OPEN_AI] query=写一篇关于釜托寺 法讯 的 微博 内容
+[INFO][2023-08-14 08:33:28][chat_gpt_bot.py:96] - [OPEN_AI] query=你好

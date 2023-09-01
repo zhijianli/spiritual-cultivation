@@ -293,7 +293,7 @@ class Session(object):
         else:
             first_item = session[0]['content']  # 取出session的第一个数据的content
             system_prompt = "我想让你扮演" + characterName + "。我作为一名游客将向你提出各种问题。我希望你只作为" + characterName + "来回答。"
-            if characterName == "知客僧" or first_item != system_prompt:
+            if first_item != system_prompt:
                 system_item = {'role': 'system', 'content': system_prompt}
                 session.clear()
                 session.append(system_item)

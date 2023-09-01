@@ -13,9 +13,13 @@ cmd_manager = CmdManager()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-@app.get("/")
+@app.get("/copy_generate")
 def read_root():
-    return FileResponse('index.html')
+    return FileResponse('copy_generate.html')
+
+@app.get("/temp")
+def read_root():
+    return FileResponse('temp.html')
 
 @app.get("/login")
 def temp():
@@ -93,12 +97,12 @@ async def websocket_endpoint(websocket: WebSocket):
             data = json.loads(data)
             print('received message: ' + str(data))
 
-            if data['maxCharacters']:
-                maxCharacters = data['maxCharacters']
+            prompt = ""
+            maxCharacters = data['maxCharacters']
+            if maxCharacters and int(maxCharacters) > 0:
+                prompt = data['inputValue'] + "，要求中文,字数在" + str(maxCharacters) + "个字"
             else:
-                maxCharacters = 100
-
-            prompt = data['inputValue']
+                prompt = data['inputValue']
 
             characterName = data['characterName']
 

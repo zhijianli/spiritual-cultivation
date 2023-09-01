@@ -12,7 +12,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/")
 def read_root():
-    return FileResponse('index.html')
+    return FileResponse('copy_generate.html')
 
 openai.api_key = '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'
 
