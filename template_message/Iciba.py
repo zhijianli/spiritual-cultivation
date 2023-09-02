@@ -108,15 +108,16 @@ class iciba:
         #     openid = openid.strip()
         #     result = self.send_msg(openid, self.template_id, everyday_words)
         #     self.print_log(result, openid)
-        index_number = 3
-        index = 3
-        # for openid in openids[3:]:
-        #     openid = openid.strip()
-        #     print(f"openid = {openid},index = {index}")
-        #     result = self.send_msg(openid, self.template_id)
-        #     self.print_log(result, openid)
-        #     time.sleep(10)
-        #     index = index + 1
+        index_number = 5
+        index = index_number
+        for openid in openids[index_number:]:
+            openid = openid.strip()
+            print(f"openid = {openid},index = {index}")
+            sys.stdout.flush()
+            # result = self.send_msg(openid, self.template_id)
+            # self.print_log(result, openid)
+            time.sleep(10)
+            index = index + 1
 
 
     # 执行
