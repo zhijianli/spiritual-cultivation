@@ -108,7 +108,7 @@ class iciba:
         #     openid = openid.strip()
         #     result = self.send_msg(openid, self.template_id, everyday_words)
         #     self.print_log(result, openid)
-        index_number = 169
+        index_number = 781
         index = index_number
         for openid in openids[index_number:]:
             try:
@@ -121,6 +121,7 @@ class iciba:
                 time.sleep(10)
             except Exception as error:
                 print(f"openid = {openid},index = {index-1},error = {error}")
+                time.sleep(60)
                 continue
 
 
