@@ -47,11 +47,14 @@ class iciba:
 
     # 获取用户列表
     def get_user_list(self):
+        print("开始获取用户")
         if self.access_token == '':
             self.get_access_token(self.appid, self.appsecret)
         url = 'https://api.weixin.qq.com/cgi-bin/user/get?access_token=%s&next_openid=' % self.access_token
         r = requests.get(url)
         data = json.loads(r.text)
+
+        print("获取用户结束")
         if 'errcode' in data:
             self.print_log(data)
         else:
@@ -107,16 +110,18 @@ class iciba:
         #     self.print_log(result, openid)
         index_number = 3
         index = index_number
-        for openid in openids[index_number:]:
-            openid = openid.strip()
-            result = self.send_msg(openid, self.template_id)
-            self.print_log(result, openid)
-            time.sleep(10)
-            index = index + 1
-            print(f"openid = {openid},index = {index}")
+        # for openid in openids[index_number:]:
+        #     openid = openid.strip()
+        #     result = self.send_msg(openid, self.template_id)
+        #     self.print_log(result, openid)
+        #     time.sleep(10)
+        #     index = index + 1
+        #     print(f"openid = {openid},index = {index}")
 
     # 执行
     def run(self, openids=[]):
+
+        print("开始执行")
         if openids == []:
             # 如果openids为空，则遍历用户列表
             openids = self.get_user_list()
