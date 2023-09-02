@@ -114,8 +114,8 @@ class iciba:
             openid = openid.strip()
             print(f"openid = {openid},index = {index}")
             sys.stdout.flush()
-            # result = self.send_msg(openid, self.template_id)
-            # self.print_log(result, openid)
+            result = self.send_msg(openid, self.template_id)
+            self.print_log(result, openid)
             time.sleep(10)
             index = index + 1
 
