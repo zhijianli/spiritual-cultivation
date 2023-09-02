@@ -110,13 +110,14 @@ class iciba:
         #     self.print_log(result, openid)
         index_number = 3
         index = index_number
-        # for openid in openids[index_number:]:
-        #     openid = openid.strip()
-        #     result = self.send_msg(openid, self.template_id)
-        #     self.print_log(result, openid)
-        #     time.sleep(10)
-        #     index = index + 1
-        #     print(f"openid = {openid},index = {index}")
+        for openid in openids[index_number:]:
+            openid = openid.strip()
+            print(f"openid = {openid},index = {index}")
+            # result = self.send_msg(openid, self.template_id)
+            # self.print_log(result, openid)
+            time.sleep(10)
+            index = index + 1
+
 
     # 执行
     def run(self, openids=[]):
