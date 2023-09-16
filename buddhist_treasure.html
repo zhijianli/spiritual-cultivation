@@ -33,7 +33,7 @@
       img.src = '/static/images/' + buddhaName+'.png';
       img.alt = 'Image';
       var a = document.createElement('a');
-      a.href = "/chat?characterName=" + encodeURIComponent(buddhaName);
+      a.href = "/chat?characterName=" + encodeURIComponent(buddhaName)+"&question=你是谁？你能做什么？";
       a.appendChild(img);
       div.appendChild(a);
       mainContent.appendChild(div);
