@@ -210,7 +210,7 @@
             // Show the overlay
             overlay.style.display = 'flex';
 
-            var socket = new WebSocket('ws://127.0.0.1:5678/ws');
+            var socket = new WebSocket('ws://127.0.0.1:3344/ws');
 
             socket.onopen = function(e) {
                 socket.send(

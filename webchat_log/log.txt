@@ -38,3 +38,11 @@
 [WARNING][2023-09-16 16:23:26][chat_gpt_bot.py:215] - [OPEN_AI] APIConnection failed
 [INFO][2023-09-16 16:23:30][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
 [INFO][2023-09-16 16:23:54][chat_gpt_bot.py:96] - [OPEN_AI] query=写一篇关于釜托寺 法讯 的 微博 内容，要求中文,字数在100个字
+[INFO][2023-09-16 16:30:08][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:30:52][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要上早课？
+[INFO][2023-09-16 16:31:17][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:31:23][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:50:08][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:50:19][chat_gpt_bot.py:96] - [OPEN_AI] query=釜托寺是什么历史的？
+[INFO][2023-09-16 16:50:32][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:51:00][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
