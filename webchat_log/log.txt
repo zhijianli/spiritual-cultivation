@@ -46,3 +46,4 @@
 [INFO][2023-09-16 16:50:19][chat_gpt_bot.py:96] - [OPEN_AI] query=釜托寺是什么历史的？
 [INFO][2023-09-16 16:50:32][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
 [INFO][2023-09-16 16:51:00][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-17 06:00:44][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
