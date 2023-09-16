@@ -28,3 +28,13 @@
 [INFO][2023-09-16 15:43:25][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
 [INFO][2023-09-16 15:43:34][chat_gpt_bot.py:96] - [OPEN_AI] query=写一篇关于釜托寺 法讯 的 微博 内容
 [INFO][2023-09-16 15:43:41][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:22:58][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:23:08][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:23:22][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[WARNING][2023-09-16 16:23:23][chat_gpt_bot.py:214] - Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+[WARNING][2023-09-16 16:23:23][chat_gpt_bot.py:215] - [OPEN_AI] APIConnection failed
+[INFO][2023-09-16 16:23:26][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[WARNING][2023-09-16 16:23:26][chat_gpt_bot.py:214] - Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+[WARNING][2023-09-16 16:23:26][chat_gpt_bot.py:215] - [OPEN_AI] APIConnection failed
+[INFO][2023-09-16 16:23:30][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:23:54][chat_gpt_bot.py:96] - [OPEN_AI] query=写一篇关于釜托寺 法讯 的 微博 内容，要求中文,字数在100个字
