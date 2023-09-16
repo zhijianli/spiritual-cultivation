@@ -25,3 +25,6 @@
 [INFO][2023-09-16 15:39:18][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
 [INFO][2023-09-16 15:39:25][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
 [INFO][2023-09-16 15:39:48][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:43:25][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:43:34][chat_gpt_bot.py:96] - [OPEN_AI] query=写一篇关于釜托寺 法讯 的 微博 内容
+[INFO][2023-09-16 15:43:41][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
