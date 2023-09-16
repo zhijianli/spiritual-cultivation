@@ -110,7 +110,7 @@
             chatContainer.appendChild(botDiv);
 
             //建立socket连接
-            var socket = new WebSocket('ws://127.0.0.1:7777/ws');
+            var socket = new WebSocket('ws://ai.menganhealth.cn:7777/ws');
 
             socket.onopen = function(e) {
                 socket.send(
