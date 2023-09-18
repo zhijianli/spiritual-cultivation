@@ -19,9 +19,12 @@ else:
 # OpenAI对话模型API (可用)
 class ChatGPTBot(Bot):
     def __init__(self):
+        self.MODEL = 'gpt-3.5-turbo'
+        self.FINETUNING_MODEL = 'gpt-3.5-finetuning'
+
         self.model_config_ = {
-            # 'gpt-3.5-turbo' : 'gpt-3.5-turbo',
-            'gpt-3.5-turbo': 'ft:gpt-3.5-turbo-0613:personal::7zhG7Qiy',
+            self.MODEL: conf().get('model'),
+            self.FINETUNING_MODEL : conf().get('finetuning_model'),
             'gpt-4' : 'gpt-4',
             # 'gpt-4': 'gpt-4-32k-0314',
             'DALL-E' : 'dall-e'
@@ -109,7 +112,7 @@ class ChatGPTBot(Bot):
 
             if session_id not in self.user_models_ :
                 self.user_models_[session_id] = context['model']
-            
+
             if context['model'] != self.user_models_[session_id] :
                 Session.clear_session(session_id)
                 self.user_models_[session_id] = context['model']

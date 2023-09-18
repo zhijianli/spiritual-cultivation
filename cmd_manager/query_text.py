@@ -59,7 +59,13 @@ class QueryText(ClientCmd):
         context = dict()
         context['session_id'] = create_session_id(req_data)
         context['type'] = TYPE_TEXT
-        context['model'] = 'gpt-3.5-turbo'
+        # context['model'] = 'gpt-3.5-turbo'
+        context['model'] = ''
+        if req_data['characterName'] == "釜托寺的知客僧":
+            context['model'] = self.chatgpt_.FINETUNING_MODEL
+
+        else:
+            context['model'] = self.chatgpt_.MODEL
 
         query_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 

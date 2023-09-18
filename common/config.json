@@ -1,6 +1,7 @@
 {
     "open_ai_api_key": "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",
     "model": "gpt-3.5-turbo",
+    "finetuning_model": "ft:gpt-3.5-turbo-0613:personal::802KqJLu",
     "proxy": "http://127.0.0.1:7890",
     "image_create_prefix": [
         "画",
