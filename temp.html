@@ -137,6 +137,7 @@
   <!-- Include the Quill Image Upload module -->
   <script src="https://cdn.jsdelivr.net/npm/quill-image-upload"></script>
 
+  <script src="/static/javascript/global.js"></script>
 
   <!-- Initialize Quill editor -->
   <script>
@@ -210,8 +211,7 @@
             // Show the overlay
             overlay.style.display = 'flex';
 
-            var socket = new WebSocket('ws://ai.menganhealth.cn:7777/ws');
-            //var socket = new WebSocket('ws://127.0.0.1:7777/ws');
+            var socket = new WebSocket(socket_address);
 
             socket.onopen = function(e) {
                 socket.send(

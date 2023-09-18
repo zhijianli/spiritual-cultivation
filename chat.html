@@ -82,6 +82,7 @@
         <input type="text" id="input-message" placeholder="输入您的问题">
         <button onclick="sendMessage()">提问</button>
     </div>
+    <script src="/static/javascript/global.js"></script>
     <script>
         // 修改sendMessage函数以接受可选消息参数
         function sendMessage(messageText) {
@@ -110,8 +111,7 @@
             chatContainer.appendChild(botDiv);
 
             //建立socket连接
-            var socket = new WebSocket('ws://ai.menganhealth.cn:7777/ws');
-             //var socket = new WebSocket('ws://127.0.0.1:7777/ws');
+            var socket = new WebSocket(socket_address);
 
             socket.onopen = function(e) {
                 socket.send(

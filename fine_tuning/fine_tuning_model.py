@@ -7,7 +7,7 @@ import json
 
 openai.api_key = conf().get('open_ai_api_key')
 file_path = "/home/mocuili/github/spiritual-cultivation/test/fine-tuning-test.jsonl"
-
+#
 # # 上传文件
 # upload_result = openai.File.create(
 #   file=open(file_path, "rb"),
@@ -25,22 +25,30 @@ file_path = "/home/mocuili/github/spiritual-cultivation/test/fine-tuning-test.js
 # time.sleep(30)
 
 # 查询微调模型状态
-status_result = openai.FineTuningJob.retrieve('ftjob-kBjG87tyvS1yfeG2QS4emt5t')
-fine_tuned_model = status_result['fine_tuned_model']
 
-if not fine_tuned_model:
-    print("微调未完成")
-else:
-    print("微调已完成，fine_tuned_model=" + fine_tuned_model)
+while True:
+    status_result = openai.FineTuningJob.retrieve('ftjob-cf8YGSeA8pj2xCVsan13JUFw')
 
-# 使用模型
-response = openai.ChatCompletion.create(
-  model=fine_tuned_model,
-  messages=[{'role': 'system', 'content': '我想让你扮演釜托寺的知客僧。我作为一名游客将向你提出各种问题。我希望你只作为釜托寺的知客僧来回答。'},
-            {'role': 'user', 'content': '釜托寺需要义工吗？'}],
-)
+    fine_tuned_model = status_result['fine_tuned_model']
 
-print(response.choices[0].message['content'])
+    if not fine_tuned_model:
+        print("微调未完成")
+        time.sleep(10)
+    else:
+        print("微调已完成，fine_tuned_model=" + fine_tuned_model)
+
+        # 使用模型
+        response = openai.ChatCompletion.create(
+            model=fine_tuned_model,
+            messages=[{'role': 'system', 'content': '我想让你扮演釜托寺的知客僧。我作为一名游客将向你提出各种问题。我希望你只作为釜托寺的知客僧来回答。'},
+                      {'role': 'user', 'content': '釜托寺需要义工吗？'}],
+        )
+
+        print(response.choices[0].message['content'])
+        break
+
+
+
 
 
 
