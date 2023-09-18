@@ -20,7 +20,8 @@ else:
 class ChatGPTBot(Bot):
     def __init__(self):
         self.model_config_ = {
-            'gpt-3.5-turbo' : 'gpt-3.5-turbo',
+            # 'gpt-3.5-turbo' : 'gpt-3.5-turbo',
+            'gpt-3.5-turbo': 'ft:gpt-3.5-turbo-0613:personal::7zhG7Qiy',
             'gpt-4' : 'gpt-4',
             # 'gpt-4': 'gpt-4-32k-0314',
             'DALL-E' : 'dall-e'

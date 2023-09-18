@@ -1,0 +1,52 @@
+[INFO][2023-09-16 15:19:40][chat_gpt_bot.py:96] - [OPEN_AI] query=你好，你是谁？
+[INFO][2023-09-16 15:19:45][chat_gpt_bot.py:96] - [OPEN_AI] query=你能做什么？
+[INFO][2023-09-16 15:19:51][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要做法事？
+[INFO][2023-09-16 15:20:07][chat_gpt_bot.py:96] - [OPEN_AI] query=写一篇关于釜托寺 釜托公告 的 微博 内容，要求中文,字数在200个字
+[INFO][2023-09-16 15:20:43][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-09-16 15:20:48][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？
+[INFO][2023-09-16 15:22:17][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-09-16 15:24:02][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-09-16 15:24:29][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-09-16 15:24:47][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-09-16 15:24:57][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？
+[INFO][2023-09-16 15:25:04][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？
+[INFO][2023-09-16 15:25:18][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:25:25][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:28:47][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-09-16 15:29:28][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:30:46][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:31:12][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:32:51][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:33:02][chat_gpt_bot.py:96] - [OPEN_AI] query=你好
+[INFO][2023-09-16 15:33:17][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:33:25][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:33:47][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要上早课？
+[INFO][2023-09-16 15:39:12][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:39:18][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:39:25][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:39:48][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:43:25][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 15:43:34][chat_gpt_bot.py:96] - [OPEN_AI] query=写一篇关于釜托寺 法讯 的 微博 内容
+[INFO][2023-09-16 15:43:41][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:22:58][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:23:08][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:23:22][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[WARNING][2023-09-16 16:23:23][chat_gpt_bot.py:214] - Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+[WARNING][2023-09-16 16:23:23][chat_gpt_bot.py:215] - [OPEN_AI] APIConnection failed
+[INFO][2023-09-16 16:23:26][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[WARNING][2023-09-16 16:23:26][chat_gpt_bot.py:214] - Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+[WARNING][2023-09-16 16:23:26][chat_gpt_bot.py:215] - [OPEN_AI] APIConnection failed
+[INFO][2023-09-16 16:23:30][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:23:54][chat_gpt_bot.py:96] - [OPEN_AI] query=写一篇关于釜托寺 法讯 的 微博 内容，要求中文,字数在100个字
+[INFO][2023-09-16 16:30:08][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:30:52][chat_gpt_bot.py:96] - [OPEN_AI] query=为什么要上早课？
+[INFO][2023-09-16 16:31:17][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:31:23][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:50:08][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:50:19][chat_gpt_bot.py:96] - [OPEN_AI] query=釜托寺是什么历史的？
+[INFO][2023-09-16 16:50:32][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-16 16:51:00][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-17 06:00:44][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-17 06:12:28][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-17 06:12:36][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-17 06:12:38][chat_gpt_bot.py:96] - [OPEN_AI] query=你是谁？你能做什么？
