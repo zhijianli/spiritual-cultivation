@@ -71,3 +71,4 @@ KeyError: 'ft:gpt-3.5-turbo-0613:personal::802KqJLu'
 [INFO][2023-09-18 15:51:01][chat_gpt_bot.py:100] - [OPEN_AI] query=你是谁？你能做什么？
 [INFO][2023-09-18 15:51:15][chat_gpt_bot.py:100] - [OPEN_AI] query=你是谁？你能做什么？
 [INFO][2023-09-18 15:51:36][chat_gpt_bot.py:100] - [OPEN_AI] query=你是谁？你能做什么？
+[INFO][2023-09-18 16:12:43][chat_gpt_bot.py:100] - [OPEN_AI] query=你是谁？你能做什么？
