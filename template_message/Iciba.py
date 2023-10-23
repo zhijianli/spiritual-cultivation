@@ -118,7 +118,7 @@ class iciba:
                 index = index + 1
                 result = self.send_msg(openid, self.template_id)
                 self.print_log(result, openid)
-                time.sleep(10)
+                time.sleep(5)
             except Exception as error:
                 print(f"openid = {openid},index = {index-1},error = {error}")
                 time.sleep(60)
