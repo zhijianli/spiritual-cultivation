@@ -74,7 +74,7 @@ class iciba:
             # 'url': 'https://mp.weixin.qq.com/s/gdQ9L-gRyhTBdOAiTACfLg',
             'data': {
                 'thing2': {
-                    'value': "釜托寺一年一度恭迎药师佛圣诞七咏日法会通启"
+                    'value': "釜托寺一年一度恭迎药师佛"
                 },
                 'time3':{
                     'value': "11月12-18日"
