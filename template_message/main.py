@@ -31,7 +31,7 @@ if __name__ == '__main__':
     run()方法可以传入openids列表，也可不传参数
     不传参数则对微信公众号的所有用户进行群发
     '''
-    # icb.run(openids)
-    icb.run()
+    icb.run(openids)
+    # icb.run()
 
 
