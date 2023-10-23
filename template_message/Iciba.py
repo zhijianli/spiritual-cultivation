@@ -74,7 +74,7 @@ class iciba:
             # 'url': 'https://mp.weixin.qq.com/s/gdQ9L-gRyhTBdOAiTACfLg',
             'data': {
                 'thing2': {
-                    'value': "釜托寺-恭迎药师佛圣诞-七咏日法会通启"
+                    'value': "釜托寺<恭迎药师佛圣诞>七咏日法会通启"
                 },
                 'time3':{
                     'value': "11月12-18日"
@@ -83,7 +83,7 @@ class iciba:
                     'value': "杭州市余杭区百丈镇釜托寺"
                 },
                 'time5':{
-                    'value': "10月23日"
+                    'value': "11月11日"
                 }
             }
         }
