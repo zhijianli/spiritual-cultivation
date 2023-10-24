@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 #coding=utf-8
 import Iciba
+import sys
 
 if __name__ == '__main__':
     # 微信配置
@@ -31,7 +32,10 @@ if __name__ == '__main__':
     run()方法可以传入openids列表，也可不传参数
     不传参数则对微信公众号的所有用户进行群发
     '''
-    # icb.run(openids)
-    icb.run()
+    parameter = sys.argv[1]
+
+
+    icb.run(parameter,openids)
+    # icb.run(parameter)
 
 

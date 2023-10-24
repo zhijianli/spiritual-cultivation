@@ -102,13 +102,14 @@ class iciba:
         return json.loads(r.text)
 
     # 为设置的用户列表发送消息
-    def send_everyday_words(self, openids):
+    def send_everyday_words(self,parameter,openids):
         # everyday_words = self.get_iciba_everyday()
         # for openid in openids:
         #     openid = openid.strip()
         #     result = self.send_msg(openid, self.template_id, everyday_words)
         #     self.print_log(result, openid)
-        index_number = 5781
+        index_number = parameter
+        print(f"你传入的参数是: {index_number}")
         index = index_number
         for openid in openids[index_number:]:
             try:
@@ -126,7 +127,7 @@ class iciba:
 
 
     # 执行
-    def run(self, openids=[]):
+    def run(self,parameter,openids=[]):
 
         print("开始执行")
         if openids == []:
@@ -151,5 +152,5 @@ class iciba:
             #             print("失败" + str(index))
 
         # 根据openids对用户进行群发
-        self.send_everyday_words(openids)
+        self.send_everyday_words(parameter,openids)
 
