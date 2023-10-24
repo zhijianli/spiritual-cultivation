@@ -112,20 +112,23 @@ class iciba:
         print(f"你传入的参数是: {index_number}")
         index = index_number
         print("111")
-        for openid in openids[index_number:]:
-            try:
-                print("222")
-                openid = openid.strip()
-                print(f"openid = {openid},index = {index}")
-                sys.stdout.flush()
-                index = index + 1
-                result = self.send_msg(openid, self.template_id)
-                self.print_log(result, openid)
-                time.sleep(1)
-            except Exception as error:
-                print(f"openid = {openid},index = {index-1},error = {error}")
-                time.sleep(60)
-                continue
+        try:
+            for openid in openids[index_number:]:
+                try:
+                    print("222")
+                    openid = openid.strip()
+                    print(f"openid = {openid},index = {index}")
+                    sys.stdout.flush()
+                    index = index + 1
+                    result = self.send_msg(openid, self.template_id)
+                    self.print_log(result, openid)
+                    time.sleep(1)
+                except Exception as error:
+                    print(f"openid = {openid},index = {index-1},error = {error}")
+                    time.sleep(60)
+                    continue
+        except Exception as error:
+            print(f"error = {error}")
 
 
     # 执行
