@@ -111,8 +111,10 @@ class iciba:
         index_number = int(parameter)
         print(f"你传入的参数是: {index_number}")
         index = index_number
+        print("111")
         for openid in openids[index_number:]:
             try:
+                print("222")
                 openid = openid.strip()
                 print(f"openid = {openid},index = {index}")
                 sys.stdout.flush()
