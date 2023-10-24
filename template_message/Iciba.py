@@ -31,7 +31,7 @@ class iciba:
             print(' [INFO] send to %s is success' % openid)
         else:
             print(' [ERROR] (%s) %s - %s' % (errcode, errmsg, self.get_error_info(errcode)))
-            if openid is not '':
+            if openid != '':
                 print(' [ERROR] send to %s is error' % openid)
             sys.exit(1)
 
@@ -111,11 +111,9 @@ class iciba:
         index_number = int(parameter)
         print(f"你传入的参数是: {index_number}")
         index = index_number
-        print("111")
         try:
             for openid in openids[index_number:]:
                 try:
-                    print("222")
                     openid = openid.strip()
                     print(f"openid = {openid},index = {index}")
                     sys.stdout.flush()

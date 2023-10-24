@@ -35,7 +35,7 @@ if __name__ == '__main__':
     parameter = sys.argv[1]
 
 
-    icb.run(parameter,openids)
-    # icb.run(parameter)
+    # icb.run(parameter,openids)
+    icb.run(parameter)
 
 
