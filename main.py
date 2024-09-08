@@ -66,6 +66,10 @@ def temp():
 def temp():
     return FileResponse('chat.html')
 
+@app.get("/test")
+def test():
+    return FileResponse('test.html')
+
 openai.api_key = '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'
 
 class ConnectionManager:
